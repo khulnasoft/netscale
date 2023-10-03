@@ -1,4 +1,4 @@
-// Copyright (c) 2013 KhulnaSoft, Inc.
+// Copyright (c) 2013 CloudFlare, Inc.
 
 // Extensions to "container/list" that allowing reuse of Elements.
 

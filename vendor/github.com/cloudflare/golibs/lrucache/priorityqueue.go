@@ -1,4 +1,4 @@
-// Copyright (c) 2013 KhulnaSoft, Inc.
+// Copyright (c) 2013 CloudFlare, Inc.
 
 // This code is based on golang example from "container/heap" package.
 

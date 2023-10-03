@@ -251,7 +251,7 @@ var cipherSuitesTLS13 = []*cipherSuiteTLS13{ // TODO: replace with a map.
 //     are fundamentally fragile, and suffered from an endless sequence of
 //     padding oracle attacks. See https://eprint.iacr.org/2015/1129,
 //     https://www.imperialviolet.org/2014/12/08/poodleagain.html, and
-//     https://blog.khulnasoft.com/yet-another-padding-oracle-in-openssl-cbc-ciphersuites/.
+//     https://blog.cloudflare.com/yet-another-padding-oracle-in-openssl-cbc-ciphersuites/.
 //
 //   - AES comes before ChaCha20
 //
