@@ -1,0 +1,11 @@
+Host *
+    AddressFamily inet
+
+Host {{hostname}}
+  ProxyCommand bash -c '/usr/local/bin/netscale access ssh-gen --hostname %h; ssh -F /root/.ssh/short_lived_cert_config -tt %r@cfpipe-{{hostname}} >&2 <&1'
+
+Host cfpipe-{{hostname}}
+  HostName {{hostname}}
+  ProxyCommand /usr/local/bin/netscale access ssh --hostname %h
+  IdentityFile ~/.netscale/{{hostname}}-cf_key
+  CertificateFile ~/.netscale/{{hostname}}-cf_key-cert.pub

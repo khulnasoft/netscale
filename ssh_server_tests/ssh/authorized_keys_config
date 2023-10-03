@@ -1,0 +1,5 @@
+Host *
+    AddressFamily inet
+
+Host {{hostname}}
+  ProxyCommand /usr/local/bin/netscale access ssh --hostname %h
