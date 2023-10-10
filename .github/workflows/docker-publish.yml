@@ -18,15 +18,21 @@ jobs:
         with:
           fetch-depth: 0
       - name: Setup make
-        run: make setup
-      - name: Run linter
-        run: make lint
-      - name: Run unit tests
+        run: make all
+      - name: Run clean
+        run: make clean
+      - name: Run netscale
+        run: make netscale
+      - name: Run container
+        run: make container
+      - name: Run generate-docker-version
+        run: make generate-docker-version
+      - name: Run unit test
         run: make test
-      - name: Run integration tests
-        run: make test-integration
-      - name: Run component tests
-        run: make test-component
+      - name: Run github-release
+        run: make github-release
+      - name: Run github-release-built-pkgs
+        run: make github-release-built-pkgs
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
