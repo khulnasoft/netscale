@@ -1,0 +1,27 @@
+# use a builder image for building cloudflare
+FROM golang:1.20.6 as builder
+ENV GO111MODULE=on \
+    CGO_ENABLED=0 
+    
+WORKDIR /go/src/github.com/khulnasoft/netscale/
+
+# copy our sources into the builder image
+COPY . .
+
+# compile netscale
+RUN GOOS=linux GOARCH=arm64 make netscale
+
+# use a distroless base image with glibc
+FROM gcr.io/distroless/base-debian11:nonroot-arm64
+
+LABEL org.opencontainers.image.source="https://github.com/khulnasoft/netscale"
+
+# copy our compiled binary
+COPY --from=builder --chown=nonroot /go/src/github.com/khulnasoft/netscale/netscale /usr/local/bin/
+
+# run as non-privileged user
+USER nonroot
+
+# command / entrypoint of container
+ENTRYPOINT ["netscale", "--no-autoupdate"]
+CMD ["version"]
