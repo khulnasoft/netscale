@@ -11,7 +11,7 @@ require (
 	github.com/getsentry/sentry-go v0.16.0
 	github.com/go-chi/chi/v5 v5.0.8
 	github.com/go-chi/cors v1.2.1
-	github.com/go-jose/go-jose/v3 v3.0.0
+	github.com/go-jose/go-jose/v3 v3.0.3
 	github.com/gobwas/ws v1.0.4
 	github.com/golang-collections/collections v0.0.0-20130729185459-604e922904d3
 	github.com/google/gopacket v1.1.19
@@ -36,11 +36,11 @@ require (
 	go.opentelemetry.io/otel/trace v1.6.3
 	go.opentelemetry.io/proto/otlp v0.15.0
 	go.uber.org/automaxprocs v1.4.0
-	golang.org/x/crypto v0.11.0
+	golang.org/x/crypto v0.19.0
 	golang.org/x/net v0.12.0
 	golang.org/x/sync v0.2.0
-	golang.org/x/sys v0.10.0
-	golang.org/x/term v0.10.0
+	golang.org/x/sys v0.17.0
+	golang.org/x/term v0.17.0
 	google.golang.org/protobuf v1.28.1
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 	gopkg.in/yaml.v3 v3.0.1
@@ -88,7 +88,7 @@ require (
 	golang.org/x/exp v0.0.0-20221205204356-47842c84f3db // indirect
 	golang.org/x/mod v0.11.0 // indirect
 	golang.org/x/oauth2 v0.6.0 // indirect
-	golang.org/x/text v0.11.0 // indirect
+	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/tools v0.9.1 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20221202195650-67e5cbc046fd // indirect
