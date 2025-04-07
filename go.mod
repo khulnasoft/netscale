@@ -39,9 +39,9 @@ require (
 	golang.org/x/crypto v0.17.0
 	golang.org/x/net v0.12.0
 	golang.org/x/sync v0.2.0
-	golang.org/x/sys v0.15.0
-	golang.org/x/term v0.15.0
-	google.golang.org/protobuf v1.28.1
+	golang.org/x/sys v0.10.0
+	golang.org/x/term v0.10.0
+	google.golang.org/protobuf v1.30.0
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 	gopkg.in/yaml.v3 v3.0.1
 	nhooyr.io/websocket v1.8.7
@@ -52,7 +52,7 @@ require (
 	github.com/BurntSushi/toml v1.2.0 // indirect
 	github.com/apparentlymart/go-cidr v1.1.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/cespare/xxhash/v2 v2.1.2 // indirect
+	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/cloudflare/circl v1.2.1-0.20220809205628-0a9554f37a47 // indirect
 	github.com/coredns/caddy v1.1.1 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.0 // indirect
@@ -87,12 +87,12 @@ require (
 	go.uber.org/mock v0.3.0 // indirect
 	golang.org/x/exp v0.0.0-20221205204356-47842c84f3db // indirect
 	golang.org/x/mod v0.11.0 // indirect
-	golang.org/x/oauth2 v0.6.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/oauth2 v0.7.0 // indirect
+	golang.org/x/text v0.11.0 // indirect
 	golang.org/x/tools v0.9.1 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20221202195650-67e5cbc046fd // indirect
-	google.golang.org/grpc v1.51.0 // indirect
+	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1 // indirect
+	google.golang.org/grpc v1.56.3 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
